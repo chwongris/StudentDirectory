@@ -12,14 +12,43 @@ class Person
     Instructor.new
     end
   end
+
+def initialize
+  get_person_info
+end
+
+def get_person_info
+    print "What is your name? "
+    self.name = gets.strip.chomp
+    print "What is your email? "
+    self.email = gets.strip.chomp
+    print "What is your github? "
+    self.github_user = gets.strip.chomp
+    print "What is your twitter? "
+    self.twitter = gets.strip.chomp
+    print "What is your fun fact? "
+    self.fun_fact = gets.strip.chomp
+    print "Where are you from? "
+    self.hometown = gets.strip.chomp
+end
 end
 
 class Student < Person
   attr_accessor :reason_for_joining
+    def get_person_info
+    super
+    print "Why did you join the course? "
+    self.reason_for_joining = gets.strip.chomp
+    end
 end
 
 class Instructor < Person
-  attr_accessor :type
+    attr_accessor :type
+    def get_person_info
+    super
+      print "What sort of instructor are you? "
+      self.type = gets.strip.chomp
+    end
 end
 
 @directory = ""
@@ -28,30 +57,7 @@ print "Enter Student or Instructor, q to save and quit: "
 
 while ((input = gets.strip.chomp) != 'q') do
 
-  person = nil
   person = Person.create_person(input.capitalize)
-
-    print "What is your name? "
-    person.name = gets.strip.chomp
-    print "What is your email? "
-    person.email = gets.strip.chomp
-    print "What is your github? "
-    person.github_user = gets.strip.chomp
-    print "What is your twitter? "
-    person.twitter = gets.strip.chomp
-    print "What is your fun fact? "
-    person.fun_fact = gets.strip.chomp
-    print "Where are you from? "
-    person.hometown = gets.strip.chomp
-
-  case input
-  when 'Student' 
-    print "Why did you join the course? "
-    person.reason_for_joining = gets.strip.chomp
-  when 'Instructor'
-    print "What sort of instructor are you? "
-    person.type = gets.strip.chomp
-  end
 
   # Append this to our yaml file
   @directory += person.to_yaml
