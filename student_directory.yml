@@ -1,70 +1,1483 @@
---- !ruby/object:Student
-name: Chris
-email: chwongris@gmail.co
---- 
-...
---- !ruby/object:Student
-name: Chris
-email: chwongris@gmail.com
---- !ruby/object:Instructor
-type: Teacher
-name: Dan
-email: dan@garland.com
---- !ruby/object:Student
-name: CHris
-email: chwongris@gmail.com
-github_user: test
-twitter: test
-reason_for_joining: cause i wanted to
---- !ruby/object:Instructor
-name: C
-email: c
-github_user: c
-twitter: c
-type: Teacher
---- !ruby/object:Student
-name: Chris
-email: f
-github_user: f
-twitter: f
-fun_fact: f
-reason_for_joining: f
---- !ruby/object:Student
-name: Chris
-email: f
-github_user: f
-twitter: f
-fun_fact: f
-hometown: f
-reason_for_joining: f
---- !ruby/object:Student
-name: c
-email: c
-github_user: c
-twitter: c
-fun_fact: c
-hometown: c
-reason_for_joining: c
---- !ruby/object:Student
-name: s
-email: s
-github_user: s
-twitter: s
-fun_fact: s
-hometown: s
---- !ruby/object:Student
-name: chris
-email: s
-github_user: s
-twitter: s
-fun_fact: s
-hometown: s
-reason_for_joining: s
---- !ruby/object:Instructor
-name: f
-email: f
-github_user: sd
-twitter: d
-fun_fact: s
-hometown: d
-type: s
+--- ! '--- !ruby/object:Student
+
+  name: Chris
+
+  email: chwongris@gmail.com
+
+  github_user: fd
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+--- ! '--- !ruby/object:Student
+
+  name: Chris2
+
+  email: d
+
+  github_user: d
+
+  twitter: s
+
+  fun_fact: s
+
+  hometown: g
+
+  reason_for_joining: f
+
+'
+--- ! '--- !ruby/object:Student
+
+  name: Chris3
+
+  email: ed
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+---
+- ! '--- !ruby/object:Student
+
+  name: Chris
+
+  email: chwongris@gmail.com
+
+  github_user: fd
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris2
+
+  email: d
+
+  github_user: d
+
+  twitter: s
+
+  fun_fact: s
+
+  hometown: g
+
+  reason_for_joining: f
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris3
+
+  email: ed
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+--- ! "--- \n...\n"
+--- ! '--- !ruby/object:Student
+
+  name: Chris4
+
+  email: d
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+---
+- ! '--- !ruby/object:Student
+
+  name: Chris
+
+  email: chwongris@gmail.com
+
+  github_user: fd
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris2
+
+  email: d
+
+  github_user: d
+
+  twitter: s
+
+  fun_fact: s
+
+  hometown: g
+
+  reason_for_joining: f
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris3
+
+  email: ed
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+- ! "--- \n...\n"
+- ! '--- !ruby/object:Student
+
+  name: Chris4
+
+  email: d
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+---
+- ! '--- !ruby/object:Student
+
+  name: Chris
+
+  email: chwongris@gmail.com
+
+  github_user: fd
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris2
+
+  email: d
+
+  github_user: d
+
+  twitter: s
+
+  fun_fact: s
+
+  hometown: g
+
+  reason_for_joining: f
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris3
+
+  email: ed
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+- ! "--- \n...\n"
+- ! '--- !ruby/object:Student
+
+  name: Chris4
+
+  email: d
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - - ! '--- !ruby/object:Student
+
+      name: Chris
+
+      email: chwongris@gmail.com
+
+      github_user: fd
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris2
+
+      email: d
+
+      github_user: d
+
+      twitter: s
+
+      fun_fact: s
+
+      hometown: g
+
+      reason_for_joining: f
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris3
+
+      email: ed
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+  - ! "--- \n...\n"
+  - ! '--- !ruby/object:Student
+
+    name: Chris4
+
+    email: d
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+--- ! "--- \n...\n"
+---
+- ! '--- !ruby/object:Student
+
+  name: Chris
+
+  email: chwongris@gmail.com
+
+  github_user: fd
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris2
+
+  email: d
+
+  github_user: d
+
+  twitter: s
+
+  fun_fact: s
+
+  hometown: g
+
+  reason_for_joining: f
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris3
+
+  email: ed
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+- ! "--- \n...\n"
+- ! '--- !ruby/object:Student
+
+  name: Chris4
+
+  email: d
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - - ! '--- !ruby/object:Student
+
+      name: Chris
+
+      email: chwongris@gmail.com
+
+      github_user: fd
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris2
+
+      email: d
+
+      github_user: d
+
+      twitter: s
+
+      fun_fact: s
+
+      hometown: g
+
+      reason_for_joining: f
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris3
+
+      email: ed
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+  - ! "--- \n...\n"
+  - ! '--- !ruby/object:Student
+
+    name: Chris4
+
+    email: d
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+--- ! "--- \n...\n"
+---
+- ! '--- !ruby/object:Student
+
+  name: Chris
+
+  email: chwongris@gmail.com
+
+  github_user: fd
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris2
+
+  email: d
+
+  github_user: d
+
+  twitter: s
+
+  fun_fact: s
+
+  hometown: g
+
+  reason_for_joining: f
+
+'
+- ! '--- !ruby/object:Student
+
+  name: Chris3
+
+  email: ed
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+- ! "--- \n...\n"
+- ! '--- !ruby/object:Student
+
+  name: Chris4
+
+  email: d
+
+  github_user: d
+
+  twitter: d
+
+  fun_fact: d
+
+  hometown: d
+
+  reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - - ! '--- !ruby/object:Student
+
+      name: Chris
+
+      email: chwongris@gmail.com
+
+      github_user: fd
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris2
+
+      email: d
+
+      github_user: d
+
+      twitter: s
+
+      fun_fact: s
+
+      hometown: g
+
+      reason_for_joining: f
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris3
+
+      email: ed
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+  - ! "--- \n...\n"
+  - ! '--- !ruby/object:Student
+
+    name: Chris4
+
+    email: d
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - - ! '--- !ruby/object:Student
+
+      name: Chris
+
+      email: chwongris@gmail.com
+
+      github_user: fd
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris2
+
+      email: d
+
+      github_user: d
+
+      twitter: s
+
+      fun_fact: s
+
+      hometown: g
+
+      reason_for_joining: f
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris3
+
+      email: ed
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+  - ! "--- \n...\n"
+  - ! '--- !ruby/object:Student
+
+    name: Chris4
+
+    email: d
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - - ! '--- !ruby/object:Student
+
+      name: Chris
+
+      email: chwongris@gmail.com
+
+      github_user: fd
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris2
+
+      email: d
+
+      github_user: d
+
+      twitter: s
+
+      fun_fact: s
+
+      hometown: g
+
+      reason_for_joining: f
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris3
+
+      email: ed
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - - ! '--- !ruby/object:Student
+
+        name: Chris
+
+        email: chwongris@gmail.com
+
+        github_user: fd
+
+        twitter: d
+
+        fun_fact: d
+
+        hometown: d
+
+        reason_for_joining: d
+
+'
+      - ! '--- !ruby/object:Student
+
+        name: Chris2
+
+        email: d
+
+        github_user: d
+
+        twitter: s
+
+        fun_fact: s
+
+        hometown: g
+
+        reason_for_joining: f
+
+'
+      - ! '--- !ruby/object:Student
+
+        name: Chris3
+
+        email: ed
+
+        github_user: d
+
+        twitter: d
+
+        fun_fact: d
+
+        hometown: d
+
+        reason_for_joining: d
+
+'
+    - ! "--- \n...\n"
+    - ! '--- !ruby/object:Student
+
+      name: Chris4
+
+      email: d
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+- ! "--- \n...\n"
+- - ! '--- !ruby/object:Student
+
+    name: Chris
+
+    email: chwongris@gmail.com
+
+    github_user: fd
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris2
+
+    email: d
+
+    github_user: d
+
+    twitter: s
+
+    fun_fact: s
+
+    hometown: g
+
+    reason_for_joining: f
+
+'
+  - ! '--- !ruby/object:Student
+
+    name: Chris3
+
+    email: ed
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - - ! '--- !ruby/object:Student
+
+      name: Chris
+
+      email: chwongris@gmail.com
+
+      github_user: fd
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris2
+
+      email: d
+
+      github_user: d
+
+      twitter: s
+
+      fun_fact: s
+
+      hometown: g
+
+      reason_for_joining: f
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris3
+
+      email: ed
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+  - ! "--- \n...\n"
+  - ! '--- !ruby/object:Student
+
+    name: Chris4
+
+    email: d
+
+    github_user: d
+
+    twitter: d
+
+    fun_fact: d
+
+    hometown: d
+
+    reason_for_joining: d
+
+'
+  - - ! '--- !ruby/object:Student
+
+      name: Chris
+
+      email: chwongris@gmail.com
+
+      github_user: fd
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris2
+
+      email: d
+
+      github_user: d
+
+      twitter: s
+
+      fun_fact: s
+
+      hometown: g
+
+      reason_for_joining: f
+
+'
+    - ! '--- !ruby/object:Student
+
+      name: Chris3
+
+      email: ed
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+    - - ! '--- !ruby/object:Student
+
+        name: Chris
+
+        email: chwongris@gmail.com
+
+        github_user: fd
+
+        twitter: d
+
+        fun_fact: d
+
+        hometown: d
+
+        reason_for_joining: d
+
+'
+      - ! '--- !ruby/object:Student
+
+        name: Chris2
+
+        email: d
+
+        github_user: d
+
+        twitter: s
+
+        fun_fact: s
+
+        hometown: g
+
+        reason_for_joining: f
+
+'
+      - ! '--- !ruby/object:Student
+
+        name: Chris3
+
+        email: ed
+
+        github_user: d
+
+        twitter: d
+
+        fun_fact: d
+
+        hometown: d
+
+        reason_for_joining: d
+
+'
+    - ! "--- \n...\n"
+    - ! '--- !ruby/object:Student
+
+      name: Chris4
+
+      email: d
+
+      github_user: d
+
+      twitter: d
+
+      fun_fact: d
+
+      hometown: d
+
+      reason_for_joining: d
+
+'
+- ! "--- \n...\n"
+--- ! '--- !ruby/object:Student
+
+  name: Chris 8
+
+  email: f
+
+  github_user: f
+
+  twitter: f
+
+  fun_fact: f
+
+  hometown: f
+
+  reason_for_joining: ''''
+
+'
+--- ! '--- !ruby/object:Student
+
+  name: q
+
+  email: q
+
+  github_user: w
+
+  twitter: q
+
+  fun_fact: q
+
+  hometown: w
+
+  reason_for_joining: l
+
+'
