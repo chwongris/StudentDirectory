@@ -26,6 +26,11 @@ class Student < Person
     # Build a String of SQL, that will insert all the attributes into the persons table
 
     # Execute the SQL on the @@db object
+
+    sql = "Insert into people (name, age, height, star_sign, married) values (?,?,?,?,?)"
+
+    db.execute(sql, name, age, height, star_sign, married)
+
   end
 
 end

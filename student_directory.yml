@@ -1,0 +1,52 @@
+--- ! '--- !ruby/object:Student
+
+  name: Mathilda Thompson
+
+  email: mathildathompson288@gmail.com
+
+  twitter: mathildathompson
+
+  hometown: London
+
+  reason_for_joining: To learn to code
+
+'
+--- ! '--- !ruby/object:Student
+
+  name: Ed
+
+  email: odesey@gmail.com
+
+  twitter: none
+
+  hometown: Far Rockaway
+
+  reason_for_joining: to become a monopolistic billionaire
+
+'
+--- ! '--- !ruby/object:Student
+
+  name: Johnny Bowman
+
+  email: johnnybowman@gmail.com
+
+  twitter: johnbowmanjr
+
+  hometown: Los Angeles
+
+  reason_for_joining: meet chicks
+
+'
+--- ! '--- !ruby/object:Student
+
+  name: Constantin
+
+  email: mitides.constantin@gmail.com
+
+  twitter: constantinm829
+
+  hometown: Queens
+
+  reason_for_joining: I want to learn how to code
+
+'

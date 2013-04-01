@@ -1,3 +1,5 @@
+require 'pry'
+
 class Person
   attr_accessor :id
   attr_accessor :type
@@ -37,10 +39,28 @@ class Person
   # TODO - Return an array of either Student or Instructor objects, using information
   # stored in the database
   #
+
   def self.all
     people = []
-    
     # Build a SQL String that will lookup all people in the database
+
+    results = @@db.execute("select * from people")
+    results.each do |row|
+      person = Person.create_person(row[1])
+      person.id = row[0]
+      person.name = row[2]
+      person.email = row[3]
+      
+      if person.class.to_s == "Student"
+        person.reason_for_joining = row[4]
+      elsif person.class.to_s == "Instructor"
+        person.iq = row[5]
+        else
+      end
+      people << person
+      
+    end
+
 
     # Execute the SQL on @@db
 
@@ -55,7 +75,27 @@ class Person
   #
   def self.find_by_name(name)
     people = []
-    
+
+     results = @@db.execute("select * from people where name like '%#{name}%'")
+      results.each do |row|
+      person = Person.create_person(row[1])
+      person.id = row[0]
+      person.name = row[2]
+      person.email = row[3]
+
+        if person.class.to_s == "Student"
+          person.reason_for_joining = row[4]
+        elsif person.class.to_s == "Instructor"
+          person.iq = row[5]
+        else
+        end
+      people << person
+  end
+
+
+
+
+
     # Build a SQL String that will lookup all people in the database
     # where the name matches
 
