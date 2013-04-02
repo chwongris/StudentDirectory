@@ -90,6 +90,7 @@ class Person
         else
         end
       people << person
+      puts people
   end
 
 

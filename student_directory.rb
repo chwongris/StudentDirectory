@@ -30,8 +30,7 @@ begin
       print "Please enter the search term that you're looking for: "
       search = gets.strip.chomp
 
-      # Find all the people who's name matches the given string
-      # and print out their information
+    Person.find_by_name(search)
 
     else
       # Create either a Student or Instructor object, depending on the input
