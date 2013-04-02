@@ -51,6 +51,7 @@ class PersonTest < Test::Unit::TestCase
     assert_equal 2, people.length
     assert_equal "Dan", people[0].name
     assert_equal "Sally", people[1].name
+    
   end
 
   def teardown

@@ -90,7 +90,7 @@ class Person
         else
         end
       people << person
-      puts people
+
   end
     # Build a SQL String that will lookup all people in the database
     # where the name matches

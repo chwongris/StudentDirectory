@@ -1,4 +1,4 @@
-class Student < Person
+  class Student < Person
   attr_accessor :reason_for_joining
 
   # Prompt the user for questions, including those extra quetions pertaining to 
@@ -29,7 +29,7 @@ class Student < Person
 
     sql = "Insert into people (type, name, email, reason_for_joining) values (?,?,?,?)"
 
-    @@db.execute(sql, self.class.to_s, name, email, reason_for_joining)
+    @@db.execute(sql, self.class.to_s, self.name, self.email, self.reason_for_joining)
 
   end
 

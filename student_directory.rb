@@ -35,7 +35,7 @@ begin
       print "Please enter the search term that you're looking for: "
       search = gets.strip.chomp
 
-    Person.find_by_name(search)
+    puts Person.find_by_name(search)
 
     else
       # Create either a Student or Instructor object, depending on the input
