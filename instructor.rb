@@ -26,5 +26,11 @@ class Instructor < Person
     # Build a String of SQL, that will insert all the attributes into the persons table
 
     # Execute the SQL on the @@db object    
+
+    sql = "Insert into people (type, name, email, iq) values (?,?,?,?)"
+
+    @@db.execute(sql, self.class.to_s, name, email, iq)
+  
+
   end
 end

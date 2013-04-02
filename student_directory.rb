@@ -16,10 +16,13 @@ begin
 
   while ((input = gets.strip.chomp) != 'q') do
 
+
     case input
     when 'p'
-      # Find all the people who are in the database 
-      # and print out their information
+    results = Person.all
+    results.each do |row|
+      puts row
+    end
     
 
     when 's'

@@ -27,9 +27,9 @@ class Student < Person
 
     # Execute the SQL on the @@db object
 
-    sql = "Insert into people (name, age, height, star_sign, married) values (?,?,?,?,?)"
+    sql = "Insert into people (type, name, email, reason_for_joining) values (?,?,?,?)"
 
-    db.execute(sql, name, age, height, star_sign, married)
+    @@db.execute(sql, self.class.to_s, name, email, reason_for_joining)
 
   end
 
