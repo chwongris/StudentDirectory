@@ -92,11 +92,6 @@ class Person
       people << person
       puts people
   end
-
-
-
-
-
     # Build a SQL String that will lookup all people in the database
     # where the name matches
 
@@ -106,6 +101,10 @@ class Person
     # filling in the information as you go.
 
     return people
+  end
+
+  def self.deleteid(id)
+    @@db.execute("delete from people where id = #{id}")
   end
 
   # Prompt the user for some questions, common to all Person classes

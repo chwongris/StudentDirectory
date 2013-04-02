@@ -12,7 +12,7 @@ require_relative 'instructor'
 begin
   Person.open_database "student_directory.db"
   puts "Student Directory, v0.0.3 by Dan Garland"
-  print 'Enter Student or Instructor, p to print, s to search, q to quit: '
+  print 'Enter Student or Instructor, p to print, s to search, q to quit, d to delete: '
 
   while ((input = gets.strip.chomp) != 'q') do
 
@@ -23,6 +23,11 @@ begin
     results.each do |row|
       puts row
     end
+    
+    when 'd'
+      print "Please enter the id of the entry you want to delete: "
+      id = gets.strip.chomp
+      Person.deleteid(id)
     
 
     when 's'
@@ -45,7 +50,7 @@ begin
       end 
     end
     
-    print 'Enter Student or Instructor, p to print, s to search, q to quit: '
+    print 'Enter Student or Instructor, p to print, s to search, q to quit, d to delete: '
   end
 rescue Exception => e
   puts "Error ! #{e}"
