@@ -8,7 +8,7 @@ require_relative '../instructor'
 class PersonTest < Test::Unit::TestCase
 
   def setup
-    Person.open_database "test/test.db"
+    Person.open_database "test.db"
   end
 
   def test_all_method_gives_me_all_people

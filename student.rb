@@ -4,11 +4,16 @@
   # Prompt the user for questions, including those extra quetions pertaining to 
   # Student objects
   #
-  def ask_questions
-    super
-    print "What was your reason for joining? "
-    self.reason_for_joining = gets.strip.chomp
-  end
+
+  #   def initialize
+  #   self.ask_questions
+  # end
+  
+  # def ask_questions
+  #   super
+  #   self.reason_for_joining = @reason
+
+  # end
 
   # Provides a String that represents this Student, try me with puts!
   # 
@@ -26,10 +31,9 @@
     # Build a String of SQL, that will insert all the attributes into the persons table
 
     # Execute the SQL on the @@db object
-
+    db = SQLite3::Database.new("studentdata.db")
     sql = "Insert into people (type, name, email, reason_for_joining) values (?,?,?,?)"
-
-    @@db.execute(sql, self.class.to_s, self.name, self.email, self.reason_for_joining)
+    db.execute(sql, self.class.to_s, self.name, self.email, self.reason_for_joining)
 
   end
 

@@ -8,7 +8,7 @@ require_relative '../instructor'
 class InstructorTest < Test::Unit::TestCase
 
   def setup
-    Person.open_database "test/test.db"
+    Person.open_database "test.db"
   end
 
   def test_that_the_save_method_works

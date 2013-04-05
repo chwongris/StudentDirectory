@@ -19,39 +19,37 @@ get '/entry' do
   erb :index
 end
 
+# get '/SorI' do
+#   erb :SorI
+# end
+
 post '/entry' do
-person = Person.create_person(params[:SorI])
-person.name = params[:name]
-person.email = params[:email]
+a = Person.create_person(params[:SorI])
+a.name = params[:name]
+a.email = params[:email]
+a.type = a.class.to_s
+
 if params[:SorI] == "Student"
-person.reason_for_joining = params[:reason]
-db = SQLite3::Database.new("studentdata.db")
-sql = "Insert into people (type, name, email, reason_for_joining) values (?,?,?,?)"
-db.execute(sql, person.class.to_s, person.name, person.email, person.reason_for_joining)
+a.reason_for_joining = params[:reason]
+a.save
   erb :output, :locals => {
-    :type => person.class.to_s,
-    :name => person.name,
-    :email => person.email,
-    :reason => person.reason_for_joining
+    :type => a.type,
+    :name => a.name,
+    :email => a.email,
+    :reason => a.reason_for_joining
   } 
+
 else
-person.iq = params[:reason] 
-db = SQLite3::Database.new("studentdata.db")
-sql = "Insert into people (type, name, email, iq) values (?,?,?,?)"
-db.execute(sql, person.class.to_s, person.name, person.email, person.iq)
+a.iq = params[:reason] 
+a.save
   erb :output, :locals => {
-    :type => person.class.to_s,
-    :name => person.name,
-    :email => person.email,
-    :reason => person.iq
+    :type => a.type,
+    :name => a.name,
+    :email => a.email,
+    :reason => a.iq
   }
 end
-
-
-
-
-
-
+end
 
 # unless person.nil?
 #         # Prompt the user for information about a Person
@@ -96,4 +94,3 @@ end
 # ensure
 #   # Ensure that the database is closed before we go
 #   Person.close_database
-end

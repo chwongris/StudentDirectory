@@ -1,10 +1,14 @@
 require 'pry'
+require 'SQLite3'
+require 'sinatra'
 
 class Person
   attr_accessor :id
   attr_accessor :type
   attr_accessor :name
   attr_accessor :email
+  
+
   
   # Get a reference to the database (HINT - don't need to change this)
   #
@@ -108,11 +112,11 @@ class Person
   end
 
   # Prompt the user for some questions, common to all Person classes
-  #
-  def ask_questions
-    print "What is your name? "
-    self.name = gets.strip.chomp
-    print "What is your email? "
-    self.email = gets.strip.chomp
-  end
+  # #
+  # def ask_questions
+  # self.name = @name
+  # self.email = @email
+  # binding.pry
+    
+  # end
 end
