@@ -15,40 +15,53 @@ get '/' do
   erb :index
 end
 
-get '/entry' do
-  erb :index
+
+
+post '/questions' do
+  if params[:SorI] == "Student"
+    redirect '/Student'
+  else
+    redirect '/Instructor'
+end
 end
 
-# get '/SorI' do
-#   erb :SorI
-# end
+get '/Student' do
+ erb :student
+end
 
-post '/entry' do
-a = Person.create_person(params[:SorI])
+get '/Instructor' do
+ erb :instructor
+end
+
+post '/outputstudent' do
+a = Person.create_person("Student")
 a.name = params[:name]
 a.email = params[:email]
 a.type = a.class.to_s
-
-if params[:SorI] == "Student"
 a.reason_for_joining = params[:reason]
 a.save
-  erb :output, :locals => {
+  erb :outputstudent, :locals => {
     :type => a.type,
     :name => a.name,
     :email => a.email,
     :reason => a.reason_for_joining
-  } 
-
-else
-a.iq = params[:reason] 
-a.save
-  erb :output, :locals => {
-    :type => a.type,
-    :name => a.name,
-    :email => a.email,
-    :reason => a.iq
-  }
+}
 end
+
+post '/outputinstructor' do
+b = Person.create_person("Instructor")
+b.name = params[:name]
+b.email = params[:email]
+b.type = b.class.to_s
+b.iq = params[:iq] 
+b.save
+  erb :outputinstructor, :locals => {
+    :type => b.type,
+    :name => b.name,
+    :email => b.email,
+    :iq => b.iq.to_s
+  }
+
 end
 
 # unless person.nil?
@@ -93,4 +106,3 @@ end
 #   puts "#{e.backtrace.join "\n"}"
 # ensure
 #   # Ensure that the database is closed before we go
-#   Person.close_database

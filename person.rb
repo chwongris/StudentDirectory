@@ -64,13 +64,6 @@ class Person
       people << person
       
     end
-
-
-    # Execute the SQL on @@db
-
-    # Iterate through each result, and build either a Student or an Instructor,
-    # filling in the information as you go.
-
     return people
   end
 
@@ -81,8 +74,8 @@ class Person
     people = []
 
      results = @@db.execute("select * from people where name like '%#{name}%'")
-      results.each do |row|
-      person = Person.create_person(row[1])
+
+
       person.id = row[0]
       person.name = row[2]
       person.email = row[3]
@@ -95,7 +88,7 @@ class Person
         end
       people << person
 
-  end
+  
     # Build a SQL String that will lookup all people in the database
     # where the name matches
 
