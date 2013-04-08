@@ -34,24 +34,24 @@ get '/Instructor' do
 end
 
 post '/outputstudent' do
-@student = Person.create_person("Student")
-@student.name = params[:name]
-@student.email = params[:email]
-@student.type = @student.class.to_s
-@student.reason_for_joining = params[:reason]
-@student.save
- 
-  erb :outputstudent
+person = Person.create_person("Student")
+person.name = params[:name]
+person.email = params[:email]
+person.type = person.class.to_s
+person.reason_for_joining = params[:reason]
+person.save
+redirect '/'
 end
 
 post '/outputinstructor' do
-@instructor = Person.create_person("Instructor")
-@instructor.name = params[:name]
-@instructor.email = params[:email]
-@instructor.type = @instructor.class.to_s
-@instructor.iq = params[:iq] 
-@instructor.save
-erb :outputinstructor
+person = Person.create_person("Instructor")
+person.name = params[:name]
+person.email = params[:email]
+person.type = @person.class.to_s
+person.iq = params[:iq] 
+person.save
+# erb :outputinstructor
+redirect '/'
 end
 
 

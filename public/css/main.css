@@ -20,7 +20,6 @@ th {
     height:10px; 
     color:black;
     font-size: 10px;
-    font-weight: strong;
     border: 1px solid black;
     text-align: left;
 }
@@ -69,12 +68,13 @@ h1{
     text-align: center;
      font-family: Arial;
      margin-top: 20px;
-     padding-top: 20px;
+     padding-top: 30px;
      color: white;
  }
 
 #addressbook{
     display: block;
+    padding-top: 0px;
     background-repeat:no-repeat;
     background-image:url('../images/addressbook.png');
     background-position:center;
@@ -83,9 +83,8 @@ h1{
 
 #content{
     display: inline-block;
-    float:left;
-    position:relative;
-    top:-260px; 
+    position:absolute;
+     top:200px;
     left:51%;
     height: 350px;
     width: 280px;
@@ -95,15 +94,13 @@ h1{
 
 #database{
 
-    position:relative;
-    top:40%; 
+    position:absolute;
+    top:200px; 
     right:51%;
     height: 350px;
     width: 280px;
-    background-color: white;
     text-align: left;
     padding-left: 100px;
-    z-index: +1;
     
 }
 
@@ -111,7 +108,13 @@ h1{
  h2{
      font-family: Arial;
      color: black;
-     font-style: strong;
+     font-style: bold;
+ }
+
+  h3{
+     font-family: Arial;
+     color: black;
+     text-align: center;
  }
 
  img#poster{
