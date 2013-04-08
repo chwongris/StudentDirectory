@@ -5,7 +5,7 @@
   # Student objects
   #
 
-  #   def initialize
+  #  def initialize
   #   self.ask_questions
   # end
   
@@ -31,9 +31,9 @@
     # Build a String of SQL, that will insert all the attributes into the persons table
 
     # Execute the SQL on the @@db object
-    db = SQLite3::Database.new("studentdata.db")
+    
     sql = "Insert into people (type, name, email, reason_for_joining) values (?,?,?,?)"
-    db.execute(sql, self.class.to_s, self.name, self.email, self.reason_for_joining)
+    @@db.execute(sql, self.class.to_s, name, email, reason_for_joining)
 
   end
 

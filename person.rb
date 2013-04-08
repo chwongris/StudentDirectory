@@ -1,6 +1,5 @@
 require 'pry'
-require 'SQLite3'
-require 'sinatra'
+require 'sqlite3'
 
 class Person
   attr_accessor :id
@@ -8,7 +7,9 @@ class Person
   attr_accessor :name
   attr_accessor :email
   
-
+  def initialize
+    Person.open_database "studentdata.db"
+  end
   
   # Get a reference to the database (HINT - don't need to change this)
   #
@@ -47,7 +48,7 @@ class Person
   def self.all
     people = []
     # Build a SQL String that will lookup all people in the database
-
+    Person.open_database "studentdata.db"
     results = @@db.execute("select * from people")
     results.each do |row|
       person = Person.create_person(row[1])
@@ -65,6 +66,7 @@ class Person
       
     end
     return people
+  
   end
 
   # TODO - Return an array of either Student or Instructor objects, using information

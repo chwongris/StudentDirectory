@@ -1,28 +1,67 @@
+
 #welcome{
     display: inline;
 }
 
 #results{
     font-size: 20px;
-    color: white;
     float:right;
     font-family: Arial;
-    width:70%;
-    margin-top: 10px;
-    padding-right: 30px;
+
 }
 
 td {
-    color:white;
+    color:black;
+    font-size: 10px;
+    border: 1px solid black;
+}
+
+th {
+    height:10px; 
+    color:black;
+    font-size: 10px;
+    font-weight: strong;
+    border: 1px solid black;
+    text-align: left;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+
+#top{
+    color:black;
+    font-size: 10px;
+    font-weight: strong;
 }
 
 #menu{
     float:left;
     width:100%;
     max-height:100px;
-    background:grey;
+
+    text-align: left;
+    padding-top: 15px;
+    font-family: Arial;
+}
+
+#menuradio{
+    float:left;
+    width:100%;
+    max-height:100px;
     text-align: center;
     padding-top: 15px;
+    font-family: Arial;
+}
+
+#button{
+    float:left;
+    width:100%;
+    max-height:100px;
+    padding-top: 15px;
+    margin-left:40%;
     font-family: Arial;
 }
 
@@ -30,12 +69,48 @@ h1{
     text-align: center;
      font-family: Arial;
      margin-top: 20px;
+     padding-top: 20px;
      color: white;
  }
 
+#addressbook{
+    display: block;
+    background-repeat:no-repeat;
+    background-image:url('../images/addressbook.png');
+    background-position:center;
+    height: 600px;
+}
+
+#content{
+    display: inline-block;
+    float:left;
+    position:relative;
+    top:-260px; 
+    left:51%;
+    height: 350px;
+    width: 280px;
+    text-align: left;
+    
+}
+
+#database{
+
+    position:relative;
+    top:40%; 
+    right:51%;
+    height: 350px;
+    width: 280px;
+    background-color: white;
+    text-align: left;
+    padding-left: 100px;
+    z-index: +1;
+    
+}
+
+
  h2{
      font-family: Arial;
-     color: white;
+     color: black;
      font-style: strong;
  }
 
@@ -59,3 +134,5 @@ margin-left: auto;
  body{
     background-color: black
  }
+
+

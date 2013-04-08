@@ -1,40 +1,20 @@
 
-  
-<p>
-</p>
 
-<h1>
-
-</h1>
-    <div id="menu" >
-      
-     <!--        <form action="/entry" method="POST">
-            <label for="SorI">Student or Instructor</label>
-            <input type="text" name="SorI" /> 
-            <label for="name">Name:</label>
-            <input type="text" name="name" /> 
-            <label for="email">email:</label>
-            <input type="text" name="email" /> 
-            <label for="reason">Reason for Joining:</label>
-            <input type="text" name="reason" />
-            <input type="submit" />
-        -->
-    </div>
 
 <div id="results">
 
-<table border="1">
+<table>
 <tr>
-<td>Student or Instructor</td>
-<td>Name</td>
-<td>email</td>
-<td>Reason for joining</td>
+<th>Student or Instructor</th>
+<th>Name</th>
+<th>Email</th>
+<th>Reason for joining</th>
 </tr>
 <tr>
-<td><%= type %></td>
-<td><%= name %></td>
-<td><%= email %></td>
-<td><%= reason %></td>
+<td><%= @student.class.to_s %></td>
+<td><%= @student.name %></td>
+<td><%= @student.email %></td>
+<td><%= @student.reason_for_joining %></td>
 </tr>
 </table>
 

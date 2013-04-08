@@ -1,22 +1,39 @@
 <html> 
 <head>
   <title>
-    Student Directory!
+    General Assembly Directory
   </title>
-<link rel="stylesheet" href="css/main.css">
-<head>
+  <link rel="stylesheet" href="css/main.css">
+  <head>
 
 
-  <body>
-    <h1>
-     Student Directory!
-    </h1>
+    <body>
+      <h1>
+       General Assembly Directory
+     </h1>
+
+    
+  
+     <div id ="addressbook">
+      <div id ="database">
+        <h2>sdfsfsdfs</h1>
+         <% Person.all.reverse.each do |elem| %>
+         <table>
+          <tr>
+            <td>
+              <%= elem %>
+            </td>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
 
 
 
-  <div id="content">
-    <%= yield %>
-  </div>
 
   </body>
   </html>
